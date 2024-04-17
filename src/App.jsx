@@ -1,4 +1,6 @@
 import {useState} from "react";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
 
@@ -10,6 +12,9 @@ const App = () => {
 
     return (
         <div>
+
+            <Analytics/>
+            <SpeedInsights/>
 
             {getX}
 
