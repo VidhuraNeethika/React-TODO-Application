@@ -1,6 +1,7 @@
 import {useState} from "react";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import TestComponent from "./Components/TestComponent.jsx";
 
 const App = () => {
 
@@ -22,6 +23,8 @@ const App = () => {
                 btnClick()
             }}>Click Me!
             </button>
+
+            <TestComponent data={getX} fn={setX}/>
 
         </div>
     )
