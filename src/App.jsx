@@ -1,30 +1,27 @@
-import {useState} from "react";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
-import TestComponent from "./Components/TestComponent.jsx";
+import {Analytics} from "@vercel/analytics/react";
+import {SpeedInsights} from "@vercel/speed-insights/react";
+import {useRef, useState} from "react";
 
 const App = () => {
 
-    const [getX, setX] = useState(0);
-
-    const btnClick = () => {
-        setX(getX + 1);
-    }
+    const [getData, setData] = useState([]);
+    const inputRef = useRef(null);
 
     return (
         <div>
-
             <Analytics/>
             <SpeedInsights/>
 
-            {getX}
+            <input ref={inputRef} type="text"/>
 
             <button onClick={() => {
-                btnClick()
-            }}>Click Me!
+                setData([...getData, inputRef.current.value])
+            }}>Submit
             </button>
 
-            <TestComponent data={getX} fn={setX}/>
+            {getData.map((item, index) => {
+                return <p key={index}>{item}</p>
+            })}
 
         </div>
     )
