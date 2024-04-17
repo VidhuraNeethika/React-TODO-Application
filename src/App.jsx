@@ -15,7 +15,7 @@ const App = () => {
 
             <button onClick={() => {
                 btnClick()
-            }}>Click Me
+            }}>Don't click me!
             </button>
 
         </div>
