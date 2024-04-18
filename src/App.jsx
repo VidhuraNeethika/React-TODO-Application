@@ -1,27 +1,18 @@
-import {useState} from "react";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
+import {Analytics} from "@vercel/analytics/react";
+import {SpeedInsights} from "@vercel/speed-insights/react";
+import ToDo from "./components/ToDo.jsx";
 
 const App = () => {
 
-    const [getX, setX] = useState(0);
-
-    const btnClick = () => {
-        setX(getX + 1);
-    }
-
     return (
-        <div>
-
+        <div className='font-body'>
             <Analytics/>
             <SpeedInsights/>
 
-            {getX}
+            <div className='blur-circle'></div>
+            <div className='blur-circle'></div>
 
-            <button onClick={() => {
-                btnClick()
-            }}>Click Me!
-            </button>
+            <ToDo/>
 
         </div>
     )
