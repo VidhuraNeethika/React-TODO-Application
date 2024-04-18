@@ -12,14 +12,7 @@ const App = () => {
             <div className='blur-circle'></div>
             <div className='blur-circle'></div>
 
-            <button onClick={() => {
-                setData([...getData, inputRef.current.value])
-            }}>Submit
-            </button>
-
-            {getData.map((item, index) => {
-                return <p key={index}>{item}</p>
-            })}
+            <ToDo/>
 
         </div>
     )
