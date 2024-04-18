@@ -1,14 +1,11 @@
 import {Analytics} from "@vercel/analytics/react";
 import {SpeedInsights} from "@vercel/speed-insights/react";
-import {useRef, useState} from "react";
+import ToDo from "./components/ToDo.jsx";
 
 const App = () => {
 
-    const [getData, setData] = useState([]);
-    const inputRef = useRef(null);
-
     return (
-        <div>
+        <div className='font-body'>
             <Analytics/>
             <SpeedInsights/>
 
