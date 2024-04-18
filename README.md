@@ -1,1 +1,11 @@
-React TODO Application with Environment Setup,Components,JSX configs,Rendering List,useState Hooks,Passing Props,useRef Hooks,useEffect Hooks
+React TODO Application with
+-Environment Setup
+-Components
+-JSX Configs
+-Rendering List
+-useState Hooks
+-Passing Props
+-useRef Hooks
+-useEffect Hooks
+-Frond-end CSS framework: Tailwind CSS
+-Storage: LocalStorage
