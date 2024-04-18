@@ -9,7 +9,8 @@ const App = () => {
             <Analytics/>
             <SpeedInsights/>
 
-            <input ref={inputRef} type="text"/>
+            <div className='blur-circle'></div>
+            <div className='blur-circle'></div>
 
             <button onClick={() => {
                 setData([...getData, inputRef.current.value])
