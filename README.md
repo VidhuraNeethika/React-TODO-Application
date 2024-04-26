@@ -20,7 +20,6 @@
 - Open the command prompt or Terminal and navigate to the directory where you want to create a new project. Then, type : `npm create vite@latest`
 <pre><code>npm create vite@latest</code></pre>
 - Then add a `project name` and select framework : `react`
-<br/>
 - After that select a variant : `JavaScript + SWC`
 
 #### Open your project using code editor
